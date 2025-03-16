@@ -11,3 +11,7 @@
   flex-basis: 25%;
   background-color: tomato;
 }
+
+.grid-item-hovered {
+  background-color: blueviolet;
+}
