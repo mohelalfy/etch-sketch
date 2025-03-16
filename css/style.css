@@ -8,7 +8,6 @@
 }
 
 .grid-item {
-  flex-basis: 25%;
   background-color: tomato;
 }
 

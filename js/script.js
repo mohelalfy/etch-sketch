@@ -6,11 +6,13 @@ function resetGrid() {
 }
 
 function generateGrid(length) {
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length * length; i++) {
     const div = document.createElement("div");
-    div.classList.add("grid-item");
 
-    div.addEventListener("mouseenter", (e) => {
+    div.classList.add("grid-item");
+    div.style.flexBasis = `${(1 / length) * 100}%`;
+
+    div.style.flexBasis = div.addEventListener("mouseenter", (e) => {
       div.classList.add("grid-item-hovered");
     });
 
@@ -27,7 +29,7 @@ resetButton.addEventListener("click", () => {
   }
 
   resetGrid();
-  generateGrid(length * length);
+  generateGrid(length);
 });
 
-generateGrid(16);
+generateGrid(4);
