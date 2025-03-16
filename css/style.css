@@ -1,3 +1,6 @@
+body {
+  background-color: #121212;
+}
 
 #grid {
   display: flex;
@@ -8,11 +11,11 @@
 }
 
 .grid-item {
-  background-color: tomato;
+  background-color: greenyellow;
 }
 
 .grid-item-hovered {
-  background-color: blueviolet;
+  background-color: cornflowerblue;
 }
 
 #reset-button {
