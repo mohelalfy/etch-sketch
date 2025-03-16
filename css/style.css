@@ -1,0 +1,13 @@
+
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+
+.grid-item {
+  flex-basis: 25%;
+  background-color: tomato;
+}
